@@ -8,14 +8,22 @@
 
 <body>
     <h1>Login</h1>
-    <form action="" method="post">
+    <form action="./controllers/verificaLogin.php" method="post">
         <label for="user">Usuário</label>
-        <input type="email" name="user" id="user">
+        <input type="text" name="user" id="user">
         
         <label for="pass">Senha</label>
         <input type="password" name="pass" id="pass">
 
         <input type="submit">
     </form>
+
+    <h5>
+        <?php
+            session_start();
+            echo("<br> Usuário Logado:" . $_SESSION['loggedUser']);
+        ?>
+    </h5>
+
 </body>
 </html>
