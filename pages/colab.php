@@ -7,7 +7,6 @@
         session_start();
 
         $_SESSION['user'];
-        $_SESSION['loggedUser']
     ?>
     <title>Document</title>
 </head>

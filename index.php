@@ -21,7 +21,10 @@
     <h5>
         <?php
             session_start();
-            echo("<br> Usuário Logado:" . $_SESSION['loggedUser']);
+
+            if(isset($_SESSION['user'])){
+                echo("<br> Usuário Logado:" . $_SESSION['user']);
+            }
         ?>
     </h5>
 
