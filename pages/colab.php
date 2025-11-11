@@ -1,9 +1,23 @@
-<?php 
-    session_start();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php 
+        session_start();
 
-    $_SESSION['user'];
+        $_SESSION['user'];
+        $_SESSION['loggedUser']
+    ?>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Você Está na página do Colaborador</h1>
+    <h2><?php echo("Bem vindo, " . $_SESSION['user'])?></h2>
 
-    echo("Você está na página do COLABORADOR!");
-    echo("Bem vindo, " . $_SESSION['user']);
+    <a href="../controllers/sair.php">Sair</a>
+</body>
+</html>
 
-?>
+
+
