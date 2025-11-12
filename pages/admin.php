@@ -8,11 +8,11 @@
 
         $_SESSION['user'];
     ?>
-    <title>Document</title>
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Você Está na página do administrador</h1>
-    <h2><?php echo("Bem vindo, " . $_SESSION['user'])?></h2>
+    <h1><?php echo("Bem vindo, " . $_SESSION['user'])?></h1>
 
     <a href="../controllers/sair.php">Sair</a>
 </body>
